@@ -1,10 +1,10 @@
-require 'spec_helper'
-ENV['RAILS_ENV'] ||= 'test'
+require "spec_helper"
+ENV["RAILS_ENV"] ||= "test"
 
-require File.expand_path('../config/environment', __dir__)
+require File.expand_path("../config/environment", __dir__)
 
 abort("The Rails environment is running in production mode!") if Rails.env.production?
-require 'rspec/rails'
+require "rspec/rails"
 Faker::Config.locale = :ja
 
 begin
